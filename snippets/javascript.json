@@ -1,0 +1,12 @@
+{
+    "console.dir": {
+        "prefix": "xmodel",
+        "body": [
+            "export default {\n\t// model名称\n\tnamespace: '${1:export-model-name}',\n\t// state\n\tstate: {},\n\t// 路由监听\n\tsubscriptions: {\n\t\tsetup({ dispatch, history }) {\n\t\t\thistory.listen(location => {});\n\t\t}\n\t},\n\t// generator 函数\n\teffects: {\n\t\t*init({ payload }, { call, put }) {\n\t\t\tyield put({\n\t\t\t\ttype: 'updateState'\n\t\t\t});\n\t\t}\n\t},\n\t// reducer\n\treducers: {\n\t\t// 更新state\n\t\tupdateState(state, action) {\n\t\t\treturn { ...state, ...action.payload };\n\t\t}\n\t}\n};\n"
+        ],
+        "description": "xweb model"
+    }
+}
+
+
+  

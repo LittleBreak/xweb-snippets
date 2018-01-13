@@ -1,0 +1,36 @@
+{
+  "name": "xweb-snippets",
+  "displayName": "xweb-snippets",
+  "description": "Improve xweb team efficiency",
+  "version": "1.0.1",
+  "publisher": "caizongding",
+  "author": "caizongding@gmail.com",
+  "icon": "art/xweb-icon.jpg",
+  "engines": {
+    "vscode": "^1.19.0"
+  },
+  "keywords": ["react", "team", "frontend"],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url":
+      "https://github.com/LittleBreak/xweb-snippets"
+  },
+  "categories": ["Snippets"],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "javascriptreact",
+        "path": "./snippets/javascript.json"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/javascript.json"
+      },
+      {
+        "language": "jsx",
+        "path": "./snippets/javascript.json"
+      }
+    ]
+  }
+}
