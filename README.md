@@ -10,6 +10,13 @@
 | xroute | default xroute config |
 | xdis | dispatch action |
 
+## USAGE
+When installing the extension React development could be really fun
+![create xweb model](https://github.com/LittleBreak/xweb-snippets/art/xmodel.gif)
+
+
+![create xweb service](https://github.com/LittleBreak/xweb-snippets/art/xservice.gif)
+
 ## Requirements
 
 If you have any requirements or dependencies, add a section describing those and how to install and configure them.
