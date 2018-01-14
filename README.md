@@ -6,6 +6,8 @@
 | Snippets | Content |
 | -------: | --------|
 | xmodel | default model template |
+| xservice | default service template |
+| xroute | default xroute config |
 | xdis | dispatch action |
 
 ## Requirements
