@@ -1,12 +1,32 @@
 {
-    "console.dir": {
+    "model-template": {
         "prefix": "xmodel",
         "body": [
             "export default {\n\t// model名称\n\tnamespace: '${1:export-model-name}',\n\t// state\n\tstate: {},\n\t// 路由监听\n\tsubscriptions: {\n\t\tsetup({ dispatch, history }) {\n\t\t\thistory.listen(location => {});\n\t\t}\n\t},\n\t// generator 函数\n\teffects: {\n\t\t*init({ payload }, { call, put }) {\n\t\t\tyield put({\n\t\t\t\ttype: 'updateState'\n\t\t\t});\n\t\t}\n\t},\n\t// reducer\n\treducers: {\n\t\t// 更新state\n\t\tupdateState(state, action) {\n\t\t\treturn { ...state, ...action.payload };\n\t\t}\n\t}\n};\n"
         ],
         "description": "xweb model"
+    },
+    "dispatch-action": {
+        "prefix": "xdis",
+        "body": [
+            "dispatch({\n\ttype: `${${1:nameSpace}}/${2:action-name}`,\n\tpayload: {$3\n\t}\n});"
+        ],
+        "description": "dispatch action"
+    },
+    "route-config": {
+        "prefix": "xroute",
+        "body": [
+            "export default rootPath => ({\n\tpath: `${rootPath}/${1:url}`,\n\tgetComponent(nextState, cb) {\n\t\trequire.ensure([], require => {\n\t\t\tcb(null, require(\"./components/${2:route-component-file-name}\"));\n\t\t});\n\t}\n});\n"
+        ],
+        "description": "dispatch action"
+    },
+    "service-template": {
+        "prefix": "xservice",
+        "body": [
+            "import qs from 'qs'\nimport { environments as env } from '@home/constants/constent'\nimport { utilsFactory } from '@xweb/xweb-utils'\n\n// request example, include GET,POST,DELETE,PUT request template\nconst request = utilsFactory.getRequest()\n// GET\nexport async function getRequest(params) {\n\treturn request(`${env.host}URL`)\n}\n// POST\nexport async function postRequest(params) {\n\treturn request(`${env.host}URL`, {\n\t\tmethod: 'post',\n\t\tbody: JSON.stringify(params.body)\n\t})\n}\n// DELETE\nexport async function deleteRequest(params) {\nreturn request(`${env.host}URL`, {\n\t\tmethod: 'delete',\n\t\tbody: qs.stringify(params.body)\n\t})\n}\n// PUT\nexport async function putRequest(params) {\n\treturn request(`${env.host}URL`, {\n\t\tmethod: 'put',\n\t\tbody: JSON.stringify(params.body)\n\t})\n}\n"
+        ],
+        "description": "xweb service"
     }
 }
 
 
-  
