@@ -12,10 +12,10 @@
 
 ## USAGE
 When installing the extension React development could be really fun
-![create xweb model](https://github.com/LittleBreak/xweb-snippets/art/xmodel.gif)
+![create xweb model](https://raw.githubusercontent.com/LittleBreak/xweb-snippets/master/art/xmodel.gif)
 
 
-![create xweb service](https://github.com/LittleBreak/xweb-snippets/art/xservice.gif)
+![create xweb service](https://raw.githubusercontent.com/LittleBreak/xweb-snippets/master/art/xservice.gif)
 
 ## Requirements
 
