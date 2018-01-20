@@ -26,7 +26,56 @@
             "import qs from 'qs'\nimport { environments as env } from '@home/constants/constent'\nimport { utilsFactory } from '@xweb/xweb-utils'\n\n// request example, include GET,POST,DELETE,PUT request template\nconst request = utilsFactory.getRequest()\n// GET\nexport async function getRequest(params) {\n\treturn request(`${env.host}URL`)\n}\n// POST\nexport async function postRequest(params) {\n\treturn request(`${env.host}URL`, {\n\t\tmethod: 'post',\n\t\tbody: JSON.stringify(params.body)\n\t})\n}\n// DELETE\nexport async function deleteRequest(params) {\nreturn request(`${env.host}URL`, {\n\t\tmethod: 'delete',\n\t\tbody: qs.stringify(params.body)\n\t})\n}\n// PUT\nexport async function putRequest(params) {\n\treturn request(`${env.host}URL`, {\n\t\tmethod: 'put',\n\t\tbody: JSON.stringify(params.body)\n\t})\n}\n"
         ],
         "description": "xweb service"
+    },
+    "mapStateToProps": {
+        "prefix": "xstp",
+        "body": [
+            "function mapStateToProps({ ${1:model-name} }) {\n\treturn { ${1:export-model-name} };\n}\n"
+        ],
+        "description": "mapStateToProps function"
+    },
+    "react-componnet-tag": {
+        "prefix": "xtag",
+        "body": [
+            "<${1:model-name}>$2</${1:model-name}>"
+        ],
+        "description": "react-componnet-tag-close"
+    },
+    "react-componnet-tag-close": {
+        "prefix": "xtagc",
+        "body": [
+            "<${1:tab} />"
+        ],
+        "description": "react-componnet-tag-close"
+    },
+    "import-connect": {
+        "prefix": "ximp-connect",
+        "body": [
+            "import { connect } from '@xweb/xweb-next/redux';"
+        ],
+        "description": "import connect function"
+    },
+    "import-Link": {
+        "prefix": "ximp-link",
+        "body": [
+            "import { Link } from '@xweb/xweb-next/router';"
+        ],
+        "description": "import Link tag"
+    },
+    "yield-put-payload": {
+        "prefix": "xput-p",
+        "body": [
+            "yield put({\n\ttype: '${1:updateState}',\n\tpayload: {\n\t\t$2\n\t}\n});"
+        ],
+        "description": "saga yield put,has payload"
+    },
+    "yield-put": {
+        "prefix": "xput",
+        "body": [
+            "yield put({type: '${1:updateState}'});"
+        ],
+        "description": "saga yield put"
     }
 }
 
-
+ 
