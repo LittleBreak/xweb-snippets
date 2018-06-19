@@ -9,7 +9,7 @@
     "dispatch-action": {
         "prefix": "xdis",
         "body": [
-            "dispatch({\n\ttype: `${${1:nameSpace}}/${2:action-name}`,\n\tpayload: {$3\n\t}\n});"
+            "dispatch({\n\ttype: `${${1:nameSpace}}/${3:updateState}`,\n\tpayload: {$2\n\t}\n});"
         ],
         "description": "dispatch action"
     },
@@ -33,13 +33,6 @@
             "function mapStateToProps({ ${1:model-name} }) {\n\treturn { ${1:export-model-name} };\n}\n"
         ],
         "description": "mapStateToProps function"
-    },
-    "react-componnet-tag": {
-        "prefix": "xtag",
-        "body": [
-            "<${1:model-name}>$2</${1:model-name}>"
-        ],
-        "description": "react-componnet-tag-close"
     },
     "react-componnet-tag-close": {
         "prefix": "xtagc",
@@ -75,6 +68,20 @@
             "yield put({type: '${1:updateState}'});"
         ],
         "description": "saga yield put"
+    },
+    "const-props": {
+        "prefix": "xprops",
+        "body": [
+            "const {${1:name}} = this.props${2:.nameSpace};"
+        ],
+        "description": "变量定义"
+    },
+    "className": {
+        "prefix": "xcls",
+        "body": [
+            "className={styles['${1:container}']}"
+        ],
+        "description": "className"
     }
 }
 
