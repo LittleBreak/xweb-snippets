@@ -9,7 +9,6 @@
 | xdis | dispatch action |
 | xroute | default xroute config |
 | xservice | default service template |
-
 | xstp | mapStateToProps |
 | xtagc | react-componnet-tag-close |
 | ximp-connect | import-connect |
