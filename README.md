@@ -10,13 +10,14 @@
 | xroute | default xroute config |
 | xservice | default service template |
 | xstp | mapStateToProps |
-| xtagc | react-componnet-tag-close |
 | ximp-connect | import-connect |
-| ximp-link | import-Link |
 | xput-p | yield-put-payload |
 | xput | yield-put |
 | xprops | const-props |
 | xcls | className |
+| xreduce | reduce function |
+| xeffect | generate function |
+
 
 ## USAGE
 When installing the extension React development could be really fun
