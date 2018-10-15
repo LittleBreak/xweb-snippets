@@ -3,6 +3,9 @@ All notable changes to the "xweb-snippets" extension will be documented in this 
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## [1.1.7] - 2018-10-15
+- update xeffect
+
 ## [1.1.6] - 2018-10-11
 ### usage tips
 - add xreduce,xeffect
