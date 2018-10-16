@@ -3,6 +3,9 @@ All notable changes to the "xweb-snippets" extension will be documented in this 
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## [1.1.10] - 2018-10-16
+- update xdis,xarr
+
 ## [1.1.9] - 2018-10-16
 - add xarrow
 

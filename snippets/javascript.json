@@ -9,7 +9,7 @@
   "dispatch-action": {
     "prefix": "xdis",
     "body": [
-      "dispatch({\n\ttype: `${${1:nameSpace}}/${3:updateState}`,\n\tpayload: {$2\n\t}\n});"
+      "dispatch({\n\ttype: `${${1:nameSpace}}/${2:updateState}`,\n\tpayload: {$3\n\t}\n});"
     ],
     "description": "dispatch action"
   },
@@ -77,7 +77,7 @@
   },
   "arrowFunction": {
     "prefix": "xarrow",
-    "body": ["${1:arrow} = () => {$2};"],
+    "body": ["${1:arrow} = (${2:params}) => {$3};"],
     "description": "arrow function"
   }
 }
