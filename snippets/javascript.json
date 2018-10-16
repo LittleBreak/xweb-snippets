@@ -74,5 +74,10 @@
       "*${1:init}({ payload }, { call, put, select }) {$2\n  yield put({type: 'updateState'});\n},"
     ],
     "description": "single effect"
+  },
+  "arrowFunction": {
+    "prefix": "xarrow",
+    "body": ["${1:arrow} = () => {$2};"],
+    "description": "arrow function"
   }
 }

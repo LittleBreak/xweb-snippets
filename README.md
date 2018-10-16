@@ -17,6 +17,7 @@
 | xcls | className |
 | xreduce | reduce function |
 | xeffect | generate function |
+| xarrow | arrow function |
 
 
 ## USAGE
