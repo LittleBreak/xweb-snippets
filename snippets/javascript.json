@@ -6,10 +6,17 @@
     ],
     "description": "xweb model"
   },
+  "dispatch-action-payload": {
+    "prefix": "xdis-p",
+    "body": [
+      "dispatch({\n\ttype: `${${1:nameSpace}}/${2:updateState}`,\n\tpayload: {$3\n\t}\n});"
+    ],
+    "description": "dispatch action with payload"
+  },
   "dispatch-action": {
     "prefix": "xdis",
     "body": [
-      "dispatch({\n\ttype: `${${1:nameSpace}}/${2:updateState}`,\n\tpayload: {$3\n\t}\n});"
+      "dispatch({\n\ttype: `${${1:nameSpace}}/${2:updateState}`,\n});"
     ],
     "description": "dispatch action"
   },
