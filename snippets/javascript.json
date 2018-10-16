@@ -71,7 +71,7 @@
   "effect": {
     "prefix": "xeffect",
     "body": [
-      "*${1:init}({ payload }, { call, put, select }) {\n  yield put({type: 'updateState'});\n},"
+      "*${1:init}({ payload }, { call, put, select }) {$2\n  yield put({type: 'updateState'});\n},"
     ],
     "description": "single effect"
   }
